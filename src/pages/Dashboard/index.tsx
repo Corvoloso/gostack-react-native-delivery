@@ -55,7 +55,7 @@ const Dashboard: React.FC = () => {
   const navigation = useNavigation();
 
   async function handleNavigate(id: number): Promise<void> {
-    navigation.navigate('FoodDetails', { productId: id });
+    navigation.navigate('FoodDetails', { id });
   }
 
   useEffect(() => {
